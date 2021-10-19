@@ -1,2 +1,13 @@
 greeting:
   message: "hello"
+
+"%dev":
+  quarkus:
+    mongodb:
+      connection-string: mongodb+srv://lotl:ITMMkQMxFwBTNnPl@cluster0.uvg2i.mongodb.net/lotl?retryWrites=true&w=majority
+      database: "lotl"
+    grpc:
+      server:
+        port: 9001
+    http:
+      port: 8000

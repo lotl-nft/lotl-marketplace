@@ -7,11 +7,11 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native-distroless -t quarkus/lotl-marketplace-service .
+# docker build -f src/main/docker/Dockerfile.native-distroless -t quarkus/lotl-marketplace .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/lotl-marketplace-service
+# docker run -i --rm -p 8080:8080 quarkus/lotl-marketplace
 #
 ###
 FROM quay.io/quarkus/quarkus-distroless-image:1.0
