@@ -3,6 +3,7 @@ package lords.land.model;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 import lombok.Getter;
 import lombok.Setter;
+import org.bson.types.ObjectId;
 
 import java.sql.Timestamp;
 
@@ -10,13 +11,11 @@ import java.sql.Timestamp;
 @Setter
 @MongoEntity(collection="lands")
 public class Land {
-    Integer id;
+    ObjectId id;
 
     String title;
 
-    Integer attributes;
-
-    Integer size;
+    String attribute;
 
     Integer status;
 
