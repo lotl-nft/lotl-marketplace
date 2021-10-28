@@ -11,3 +11,7 @@ greeting:
         port: 9001
     http:
       port: 8000
+  token:
+    id: "617ad0ac07f435995daecf96"
+  kafka.bootstrap.servers: kafka:9092
+  mp.messaging.incoming.contract-events.connector: smallrye-kafka

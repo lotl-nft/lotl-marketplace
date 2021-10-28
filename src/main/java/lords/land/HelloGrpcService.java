@@ -1,7 +1,6 @@
 package lords.land;
 
 import io.quarkus.grpc.GrpcService;
-
 import io.smallrye.mutiny.Uni;
 
 @GrpcService

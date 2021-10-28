@@ -24,7 +24,7 @@ dependencies {
 //    implementation 'io.quarkus:quarkus-kubernetes'
     implementation 'io.quarkus:quarkus-grpc'
 //    implementation 'io.quarkus:quarkus-liquibase-mongodb'
-//    implementation 'io.quarkus:quarkus-smallrye-reactive-messaging-kafka'
+    implementation 'io.quarkus:quarkus-smallrye-reactive-messaging-kafka'
 //    implementation 'io.quarkus:quarkus-oidc'
 //    implementation 'io.quarkus:quarkus-hibernate-orm-panache'
 //    implementation 'io.quarkus:quarkus-agroal'

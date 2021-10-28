@@ -9,11 +9,11 @@ import java.util.List;
 @ApplicationScoped
 public class LandRepository implements PanacheMongoRepository<Land> {
 
-    public List<Land> find() {
-        return listAll();
+    public List<Land> find(Integer page, Integer pageSize) {
+        return find("{attribute: { $exists: true }}").page(page, pageSize).list();
     }
 
-    public List<Land> listWithAttribute(String attribute) {
-        return list("attribute", attribute.toUpperCase());
+    public List<Land> listWithAttribute(String attribute, Integer page, Integer pageSize) {
+        return find("attribute", attribute.toUpperCase()).page(page, pageSize).list();
     }
 }

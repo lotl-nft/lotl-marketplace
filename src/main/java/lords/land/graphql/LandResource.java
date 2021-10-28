@@ -2,9 +2,9 @@ package lords.land.graphql;
 
 import lords.land.model.Land;
 import lords.land.repository.LandRepository;
+import org.eclipse.microprofile.graphql.Description;
 import org.eclipse.microprofile.graphql.GraphQLApi;
 import org.eclipse.microprofile.graphql.Query;
-import org.eclipse.microprofile.graphql.Description;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -16,14 +16,14 @@ public class LandResource {
     LandRepository repository;
 
     @Query("allLands")
-    @Description("Get all Films from a galaxy far far away")
-    public List<Land> getAllLands() {
-        return repository.find();
+    @Description("Get all lands")
+    public List<Land> getAllLands(Integer page, Integer pageSize) {
+        return repository.find(page, pageSize);
     }
 
     @Query("allLandsWithAttribute")
-    @Description("Get all Films from a galaxy far far away")
-    public List<Land> getAllLandsWithAttribute(String attribute) {
-        return repository.listWithAttribute(attribute);
+    @Description("Get all Lands with attribute")
+    public List<Land> getAllLandsWithAttribute(String attribute, Integer page, Integer pageSize) {
+        return repository.listWithAttribute(attribute, page, pageSize);
     }
 }
