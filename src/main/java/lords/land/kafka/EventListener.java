@@ -20,11 +20,11 @@ public class EventListener {
     public void consume(ContractEvent contractEvent) {
         log.info("Consuming: {}", contractEvent.getId());
         if (contractEvent.getDetails().getName().equals(EventName.LISTING.getName())) {
-            contractProcessing.handlingListingEvent();
+            contractProcessing.handlingListingEvent(contractEvent);
         }
 
-        if (contractEvent.getDetails().getName().equals(EventName.BUY.getName())) {
-            contractProcessing.handlingBuyEvent();
+        if (contractEvent.getDetails().getName().equals(EventName.PURCHASE.getName())) {
+            contractProcessing.handlingPurchaseEvent(contractEvent);
         }
 
     }

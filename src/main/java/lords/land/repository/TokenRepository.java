@@ -3,6 +3,7 @@ package lords.land.repository;
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
 import lords.land.TokenConfig;
 import lords.land.model.Token;
+
 import org.bson.types.ObjectId;
 
 import javax.enterprise.context.ApplicationScoped;
