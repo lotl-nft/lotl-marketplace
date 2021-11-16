@@ -6,8 +6,8 @@ import org.mapstruct.factory.Mappers;
 
 import lords.land.model.Land;
 import lords.land.model.LandEntity;
-import lords.land.e.LandAttribute;
-import lords.land.e.LandStatus;
+import lords.land.enumrable.LandAttribute;
+import lords.land.enumrable.LandStatus;
 
 @Mapper( imports = { LandAttribute.class, LandStatus.class } )
 public interface LandMapper {

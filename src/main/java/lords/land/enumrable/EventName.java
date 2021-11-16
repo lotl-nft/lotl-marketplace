@@ -1,4 +1,4 @@
-package lords.land.e;
+package lords.land.enumrable;
 
 public enum EventName {
     PURCHASE("PurchaseEvent"),

@@ -1,4 +1,4 @@
-package lords.land.e;
+package lords.land.enumrable;
 
 import java.util.Collections;
 import java.util.Map;

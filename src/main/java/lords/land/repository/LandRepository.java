@@ -1,7 +1,6 @@
 package lords.land.repository;
 
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
-import lords.land.e.LandAttribute;
 import lords.land.mapper.LandMapper;
 import lords.land.model.Land;
 import lords.land.model.LandEntity;

@@ -2,7 +2,7 @@ package lords.land.kafka;
 
 import lombok.extern.slf4j.Slf4j;
 import lords.land.contract.ContractProcessing;
-import lords.land.e.EventName;
+import lords.land.enumrable.EventName;
 import lords.land.model.event.ContractEvent;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
 
