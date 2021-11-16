@@ -1,6 +1,20 @@
 greeting:
   message: "hello"
 
+quarkus:
+  mongodb:
+    connection-string: mongodb+srv://lotl:ITMMkQMxFwBTNnPl@cluster0.uvg2i.mongodb.net/lotl?retryWrites=true&w=majority
+    database: "lotl"
+  grpc:
+    server:
+      port: 9000
+  http:
+    port: 8000
+  token:
+    id: "617ad0ac07f435995daecf96"
+kafka.bootstrap.servers: 103.56.156.179:9092
+mp.messaging.incoming.contract-events.connector: smallrye-kafka
+
 "%dev":
   quarkus:
     mongodb:
