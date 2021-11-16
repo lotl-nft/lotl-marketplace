@@ -1,8 +1,8 @@
 package lords.land.e;
 
 public enum EventName {
-    PURCHASE("Purchase"),
-    LISTING("Listing")
+    PURCHASE("PurchaseEvent"),
+    LISTING("ListingEvent")
     ;
 
     private final String name;
