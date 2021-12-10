@@ -29,6 +29,7 @@ public class UserRepository implements PanacheMongoRepository<UserEntity> {
     public Auth authWithMetamaskToken(String token) {
         String contractAddress = AuthUtils.getContractAddressFromMetamask(token);
         UserEntity userEntity = find("contractAddress", contractAddress).firstResult();
+        // TODO: if user does not have account, create for them!
         if(!validateUser(userEntity))
             return new Auth();
         return generateAuthResource(userEntity);
