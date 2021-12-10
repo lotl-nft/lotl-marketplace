@@ -1,13 +1,12 @@
 package lords.land.mapper;
 
+import lords.land.enumrable.LandAttribute;
+import lords.land.enumrable.LandStatus;
+import lords.land.model.Land;
+import lords.land.model.LandEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
-
-import lords.land.model.Land;
-import lords.land.model.LandEntity;
-import lords.land.enumrable.LandAttribute;
-import lords.land.enumrable.LandStatus;
 
 @Mapper( imports = { LandAttribute.class, LandStatus.class } )
 public interface LandMapper {
