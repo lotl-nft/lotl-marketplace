@@ -3,7 +3,7 @@ package lords.land.mapper;
 import lords.land.enumrable.LandAttribute;
 import lords.land.enumrable.LandStatus;
 import lords.land.model.Land;
-import lords.land.model.LandEntity;
+import lords.land.entity.LandEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

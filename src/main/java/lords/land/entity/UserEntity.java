@@ -1,4 +1,4 @@
-package lords.land.model;
+package lords.land.entity;
 
 import io.quarkus.mongodb.panache.common.MongoEntity;
 import lombok.Getter;
@@ -9,19 +9,17 @@ import java.sql.Timestamp;
 
 @Getter
 @Setter
-@MongoEntity(collection="lands")
-public class LandEntity {
+@MongoEntity(collection="users")
+public class UserEntity {
     ObjectId id;
 
-    String title;
+    String username;
 
-    Integer attribute;
-
-    String address;
+    String password;
 
     Integer status;
 
-    String ownerAddress;
+    String contractAddress;
 
     Timestamp createdAt;
 

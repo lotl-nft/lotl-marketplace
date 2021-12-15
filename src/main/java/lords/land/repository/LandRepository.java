@@ -3,7 +3,7 @@ package lords.land.repository;
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
 import lords.land.mapper.LandMapper;
 import lords.land.model.Land;
-import lords.land.model.LandEntity;
+import lords.land.entity.LandEntity;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.List;

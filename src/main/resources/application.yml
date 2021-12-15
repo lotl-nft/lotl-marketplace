@@ -2,6 +2,9 @@ greeting:
   message: "hello"
 
 quarkus:
+  native:
+    resources:
+      includes: publicKey.pem
   mongodb:
     connection-string: mongodb+srv://lotl:ITMMkQMxFwBTNnPl@cluster0.uvg2i.mongodb.net/lotl?retryWrites=true&w=majority
     database: "lotl"
@@ -15,6 +18,24 @@ quarkus:
 kafka.bootstrap.servers: 103.56.156.179:9092
 mp.messaging.incoming.contract-events.connector: smallrye-kafka
 
+smallrye:
+  jwt:
+    token:
+      kid: Metadefi
+#    decrypt:
+#      key:
+#        location: privateKey.pem
+#      algorithm: RSA_OAEP_256
+mp:
+  jwt:
+    verify:
+      publickey:
+        location: publicKey.pem
+      issuer: https://metadefi.land
+#    decrypt:
+#      key:
+#        location: privateKey.pem
+
 "%dev":
   quarkus:
     mongodb:
@@ -24,7 +45,7 @@ mp.messaging.incoming.contract-events.connector: smallrye-kafka
       server:
         port: 9001
     http:
-      port: 8000
+      port: 8081
   token:
     id: "617ad0ac07f435995daecf96"
   kafka.bootstrap.servers: 103.56.156.179:9092
